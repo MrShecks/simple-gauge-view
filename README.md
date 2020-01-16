@@ -1,7 +1,7 @@
 # simple-gauge-view
 A simple custom gauge view for Android
 
-Just a pretty basic gauge view control I wrote for my Road Trip Tracker application. I thought it might be useful as
+Just a pretty basic gauge view control I wrote for my [Road Trip Tracker](https://github.com/MrShecks/road-trip-tracker)  application. I thought it might be useful as
 as starting point if anyone wants to use it to build something a bit more advanced.
 
 ![Simple Gauge View](docs/screenshots/simple-gauge-view-000.png)
