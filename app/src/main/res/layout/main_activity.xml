@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ie.justonetech.simplegaugeview.SimpleGaugeView
+            android:id="@+id/speedGaugeView1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+
+            android:layout_marginTop="16dp"
+
+            android:padding="10dp"
+
+            app:gaugeView_barColor="@android:color/darker_gray"
+            app:gaugeView_fillColor="@android:color/holo_orange_light"
+
+            app:gaugeView_labelText="KPH"
+
+            app:gaugeView_maxValue="100"
+            app:gaugeView_value="25"
+
+            app:layout_constraintEnd_toStartOf="@+id/speedGaugeView2"
+
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ie.justonetech.simplegaugeview.SimpleGaugeView
+            android:id="@+id/speedGaugeView2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+
+            android:layout_marginTop="16dp"
+
+            android:padding="10dp"
+
+            app:gaugeView_barColor="@android:color/darker_gray"
+            app:gaugeView_fillColor="@android:color/holo_red_dark"
+
+            app:gaugeView_labelText="MP/S"
+
+            app:gaugeView_maxValue="100"
+            app:gaugeView_value="50"
+            app:layout_constraintEnd_toStartOf="@+id/speedGaugeView3"
+
+
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/speedGaugeView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ie.justonetech.simplegaugeview.SimpleGaugeView
+            android:id="@+id/speedGaugeView3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+
+            android:layout_marginTop="16dp"
+
+            android:padding="10dp"
+
+            app:gaugeView_barColor="@android:color/darker_gray"
+            app:gaugeView_fillColor="@android:color/holo_green_dark"
+
+            app:gaugeView_labelText="KNOTS"
+
+            app:gaugeView_maxValue="100"
+            app:gaugeView_value="75"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/speedGaugeView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ie.justonetech.simplegaugeview.SimpleGaugeView
+            android:id="@+id/speedGaugeView0"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:padding="10dp"
+
+            app:gaugeView_barWidth="12dp"
+            app:gaugeView_fillColorEnd="#ff00ffff"
+
+            app:gaugeView_fillColorStart="#ff4d6ea3"
+            app:gaugeView_labelSize="24sp"
+
+            app:gaugeView_labelText="MPH"
+
+            app:gaugeView_maxValue="100"
+
+            app:gaugeView_strokeCap="butt"
+
+            app:gaugeView_textSize="52sp"
+            app:gaugeView_value="25"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="32dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speedGaugeView0" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/animate_to_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/animate_to_75"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/animate_to_100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

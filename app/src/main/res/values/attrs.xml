@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SimpleGaugeView">
+
+        <attr name="gaugeView_barWidth" format="dimension" />
+        <attr name="gaugeView_fillBarWidth" format="dimension" />
+
+        <attr name="gaugeView_barColor" format="color" />
+        <attr name="gaugeView_fillColor" format="color" />
+
+        <attr name="gaugeView_fillColorStart" format="color" />
+        <attr name="gaugeView_fillColorEnd" format="color" />
+
+        <attr name="gaugeView_strokeCap" format="enum">
+            <enum name="butt" value="0" />
+            <enum name="round" value="1" />
+            <enum name="square" value="2" />
+        </attr>
+
+        <attr name="gaugeView_startAngle" format="float" />
+        <attr name="gaugeView_sweepAngle" format="float" />
+
+        <attr name="gaugeView_value" format="integer" />
+        <attr name="gaugeView_minValue" format="integer" />
+        <attr name="gaugeView_maxValue" format="integer" />
+        <attr name="gaugeView_showValue" format="boolean" />
+
+        <attr name="gaugeView_textSize" format="dimension" />
+        <attr name="gaugeView_textColor" format="color" />
+        <attr name="gaugeView_textOffset" format="dimension" />
+
+        <attr name="gaugeView_labelSize" format="dimension" />
+        <attr name="gaugeView_labelColor" format="color" />
+        <attr name="gaugeView_labelText" format="string" />
+
+    </declare-styleable>
+</resources>
+

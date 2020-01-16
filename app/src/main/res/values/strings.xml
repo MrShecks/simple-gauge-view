@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SimpleGaugeView Test</string>
+
+    <string name="animate_to_0">To 0</string>
+    <string name="animate_to_75">To 75</string>
+    <string name="animate_to_100">To 100</string>
+
+</resources>
