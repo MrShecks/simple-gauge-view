@@ -224,11 +224,12 @@ class SimpleGaugeView : View {
     }
 
     override fun onRestoreInstanceState(state: Parcelable?) {
-        super.onRestoreInstanceState(state)
 
         isInitialising = true
 
         if(state is SimpleGaugeViewState) {
+            super.onRestoreInstanceState(state.superState)
+
             maxValue = state.maxValue
             barColor = state.barColor
             fillColor = state.fillColor
@@ -236,6 +237,9 @@ class SimpleGaugeView : View {
             labelColor = state.labelColor
             labelText = state.labelText
             value = state.value
+
+        } else {
+            super.onRestoreInstanceState(state)
         }
 
         isInitialising = false
