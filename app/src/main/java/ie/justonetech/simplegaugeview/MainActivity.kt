@@ -42,6 +42,8 @@ class MainActivity : AppCompatActivity() {
             speedGaugeView1.animateTo(0, 1000)
             speedGaugeView2.animateTo(0, 1000)
             speedGaugeView3.animateTo(0, 1000)
+
+            seekBar.progress = 0
         }
 
         button2.setOnClickListener {
@@ -50,6 +52,8 @@ class MainActivity : AppCompatActivity() {
             speedGaugeView2.animateTo(75, 1000)
             speedGaugeView3.animateTo(75, 1000)
 
+            seekBar.progress = 75
+
         }
 
         button3.setOnClickListener {
@@ -57,6 +61,8 @@ class MainActivity : AppCompatActivity() {
             speedGaugeView1.animateTo(100, 1000)
             speedGaugeView2.animateTo(100, 1000)
             speedGaugeView3.animateTo(100, 1000)
+
+            seekBar.progress = 100
         }
     }
 
